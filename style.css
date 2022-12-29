@@ -1,0 +1,79 @@
+:root {
+  --hue-neutral :200;
+  --hue-wrong :0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 50vw;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+body.correct {
+  background-color: lightgreen;
+}
+
+body.wrong {
+  background-color: red;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+
+.btn {
+  background-color: white; 
+  color: black; 
+  border: none;
+}
+
+.btn:hover {
+  background-color: #f3c3f9;
+  color: white;
+}
+
+.btn {
+  background-color: #4bc6fb; /* Green */
+  color: white;
+  padding: 16px 32px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.start-btn,
+.next-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
